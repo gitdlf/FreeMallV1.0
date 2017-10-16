@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <link type="text/css" href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/productlist.css" type="text/css">
+    <link rel="stylesheet" href="../css/content2.css" type="text/css">
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/productlist.js"></script>
+    <script src="../js/content2.js"></script>
+</head>
+<body>
+<div class="header">
+    <!--头部上方-->
+    <div class="hd_top_bar">
+        <div class="hd_warp">
+            <!--左边-->
+            <div class="hd_warp_left">
+                <!--未登录状态-->
+                <!--<div class="hd_unlogin">
+                    <a class="hd_login_page" href="#">Hi,请登录</a>
+                    <a class="hd_register_page" href="#">注册</a>
+                </div>-->
+                <!--登录状态-->
+                <div class="hd_login" id="hdLogin">
+                    <a href="javascript:;" class="hd_login_info">Hi,LFSenior</a>
+                </div>
+                <div class="hd_user_privilege">
+                    <a href="#" class="hd_login_out">退出登录</a>
+                    <div class="hd_user_clearfix">
+                        <div class="hd_user_img">
+                            <img src="../images/header/peopleicon_02.gif" alt="">
+                        </div>
+                        <div class="hd_user_f1">
+                            <a href="javascript:;" class="hd_user_name">lfsenior</a>
+                            <a href="javascript:;" class="hd_vip">尊贵的会员</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="hd_top_right">
+                <ul>
+                    <li class="hd_has_child">
+                        <!--我的订单-->
+                        <div class="hd_menu">
+                            <a href="">我的订单</a>
+                        </div>
+
+                    </li>
+                    <li class="hd_has_child">
+                        <!--收藏-->
+                        <div class="hd_menu">
+                            <a href="">网页收藏</a>
+                        </div>
+                    </li>
+                    <li class="hd_has_child">
+                        <!--网站导航-->
+                        <div class="hd_menu" id="hd_menu_nav">
+                            <a href="javascript:;" > 网站导航</a>
+                        </div>
+                        <div class="hd_menu_list">
+                            <a href="#" target="_blank">导航位1</a>
+                            <a href="#" target="_blank">导航位2</a>
+                            <a href="#" target="_blank">导航位3</a>
+                            <a href="#" target="_blank">导航位4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--头部下方-->
+    <div class="hd_content_var">
+        <div class="hd_logo_area">
+            <!--跳转到首页-->
+            <a href="#" class="hd_logo">
+                <!--261*150-->
+                <img src="../images/header/logo.png" width="261px" height="150px" alt="网站logo">
+            </a>
+        </div>
+        <div class="hd_content_right">
+            <div class="hd_clearfix">
+                <div class="hd_search">
+                    <div class="hd_search_form">
+                        <input type="text" class="hd_search_ipt" id="hdSearchIpt" placeholder="请输入关键字">
+                        <a href="#" class="hd_search_btn" id="hdSearchBtn"></a>
+                    </div>
+                </div>
+                <div class="hd_mini_cart">
+                    <a href="#" class="hd_cart_name" id="hdCarName">购物车</a>
+                    <div class="hd_cart_show">
+                        <!--购物车有物品-->
+                        <div class="hd_tips">
+                            <div class="hd_cart_wrap">
+                                <div class="hd_cart_list" id="hdCartList">
+                                    <!--商品详情-->
+                                    <dl>
+                                        <!--头部提示-->
+                                        <dt>
+                                            <a href="" class="hd_cart_list_titl">自由购</a>
+                                            <span>
+                                                共<i></i>件商品
+                                            </span>
+                                        </dt>
+                                        <!--商品详情页-->
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="../images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g绿豆 750g绿豆 750g绿豆 750g绿豆 750g绿豆 750g</a>
+                                                    <a href="" class="hd_pro_number">数量:<em>100</em></a>
+                                                    <p><em>￥<span class="pro_totl">8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="../images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl" >8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="hd_totla_pro">
+                                <div class="f1">
+                                    <span class="hd_all">合计</span>
+                                    <b><em>￥<span class="pro_all_totl" id="proALlTotl"></span></em></b>
+                                </div>
+                                <a href="" class="hd_cart_btn">打开购物车</a>
+                            </div>
+                        </div>
+                        <!--购物车没有物品-->
+                        <!--<div class="hd_none_tips">
+                            <span class="hd_none_icon"></span>
+                            <p class="hd_none_text">您的购物车里还没有1号店的商品哦~~</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="hd_header_nav">
+                <p class="hd_hot_search">
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="productlist_content">
+    <div class="plist">
+        <div class="mod_search_select" id="rankOpDiv">
+            <div class="sort_b" id="sortProBtn">
+                <a href="javascript:;" class="zh show">综合</a>
+                <a href="javascript:;" class="total">销量<i class="iconSearc"></i></a>
+                <a href="javascript:;" class="price">价格<i class="iconSearch"></i></a>
+                <a href="javascript:;" class="newpro">新品<i class="iconSearch"></i></a>
+            </div>
+            <!--js的功能等过段时间再做-->
+            <div class="between">
+                <div class="boxTop" id="boxTopPrice">
+                    <input type="text" class="ip1" placeholder="￥">
+                    -
+                    <input type="text" class="ip2" placeholder="￥">
+                </div>
+                <ul class="boxCon">
+                    <li class="first" id="boxConBtn">
+                        <a href="javascript:;" class="btn1">清除</a>
+                        <a href="javascript:;" class="btn2">确定</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mod_product_list">
+            <div class="list_width" id="itemSearchList">
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <!--最大库存-->
+                                    <label class="shopping_num_max_pro" style="display: none">12</label>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                    <label class="pro_buy_btn_label" style="display: none"></label>
+                                    <label class="pro_buy_btn_max_error" style="display: none">*超出库存</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>123</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>444</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="http://www.baidu.com" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                    <label class="pro_buy_btn_label" style="display: none"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>1223</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>498.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>142</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>134</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>234</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>123</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>123</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>123</span></p>
+                    </div>
+                </div>
+                <div class="mod_search_pro">
+                    <div class="itemBox">
+                        <div class="proImg">
+                            <a href="#" class="img">
+                                <img src="../images/goodsinfo/imageslf.jpg" width="230px" height="230px" alt="">
+                            </a>
+                        </div>
+                        <p class="proPrice">
+                            <em class="num"><b>￥</b>43.9</em>
+                        </p>
+                        <p class="proName">
+                            <a href="">三只松鼠 夏威夷果265gx2袋 零食 坚果 炒货干果奶油味送开口器</a>
+                        </p>
+                        <p style="width: 220px;height: 18px;"></p>
+                        <div class="item_act">
+                            <div class="shopping_num">
+                                <input type="text" value="1">
+                                <span>
+                                    <a class="add sd">加</a>
+                                    <a class="dis_decrease sd">减</a>
+                                </span>
+                                <div class="shopping_actfl">
+                                    <a href="#" class="pro_buy_btn">
+                                        加入购物车
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="storeTotel"> 销量:<span>123</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页-->
+        <div class="mod_turn_page">
+            <!--当前页面-->
+            <label id="pageNumber" style="display: none">5</label>
+            <!--最大页面-->
+            <label id="pageMaxNumber" style="display: none">5</label>
+            <!--页面url缺pg的值-->
+            <label id="pageUrl" style="display: none">www.baidu.com</label>
+            <div class="turn_page" id="turnPage">
+                <a href="" class="page_prev page_index_start">上一页</a>
+                <!--<a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>-->
+                <a href="" class="page_prev">下一页</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fooder">
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

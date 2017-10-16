@@ -1,0 +1,110 @@
+/*整体的元素的外边距都设置为0*/
+* {
+    /*margin: 0;*/
+    padding: 0;
+}
+/*banner的父容器*/
+.banner {
+    position: relative;
+    margin-left: 210px;
+}
+/*鼠标覆盖到banner内部prev才显示*/
+.banner:hover .prev {
+    display: block
+}
+/*鼠标覆盖到banner内部next才显示*/
+.banner:hover .next {
+    display: block
+}
+/*li的列表的样式清空 li设置成绝对定位*/
+.banner_ul li {
+    list-style: none;
+    position: absolute
+}
+/*设置banner_span宽度790px 高度35px  优先级1 距离底部10px  绝对定位*/
+.banner_span {
+    width: 790px;
+    height: 35px;
+    z-index: 1;
+    bottom: 10px;
+    position: absolute
+}
+/*设置banner_span p 宽度200px 高度35px 居中显示*/
+.banner_span p {
+    width: 200px;
+    height: 35px;
+    margin: 0 auto;
+}
+/*
+设置banner_span p span 宽度15px  高度15px
+背景图片不平铺 显示图片的下部分并且在span的左部显示
+左浮动
+外边距 上下10px  左右4px
+  */
+.banner_span p span {
+    width: 15px;
+    height: 15px;
+    background: url("../images/index_banner_images/dot.png") no-repeat left bottom;
+    float: left;
+    margin: 10px 4px;
+}
+/*
+设置prev
+宽度60px  高度90px
+背景图片 不平铺  相对父容器边距为0  显示图片高亮部分
+绝对定位
+距离父容器顶部50%处
+向上移动45px
+不显示
+鼠标覆盖时形状为手型
+*/
+.prev {
+    width: 60px;
+    height: 90px;
+   /* background: url("../images/index_banner_images/ad_ctr.png") no-repeat 0px -180px;*/
+    background: url("../images/index_banner_images/ad_ctr.png") no-repeat 0 top;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    display: none;
+    cursor: pointer;
+}
+/*
+设置next
+宽度60px  高度90px
+背景图片 不平铺  相对父容器边距为0  显示图片的高亮部分
+绝对定位
+距离父容器顶部50%处
+向上移动45px
+距离父容器右边距离为0
+不显示
+鼠标覆盖时形状为手型
+*/
+
+.next {
+    width: 60px;
+    height: 90px;
+   /* background: url("../images/index_banner_images/ad_ctr.png") no-repeat 0px bottom;*/
+    background: url("../images/index_banner_images/ad_ctr.png") no-repeat 0px -90px;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+/*点击span时添加的类*/
+.banner_span .active{
+    background: url("../images/index_banner_images/dot.png") no-repeat left top;
+}
+/*鼠标覆盖时背景颜色加深*/
+.next:hover{
+   /* background: url("../images/index_banner_images/ad_ctr.png") no-repeat  0px -90px;*/
+background-color: rgba(117,103,124,0.8);
+}
+/*鼠标覆盖时背景颜色加深*/
+.prev:hover{
+ /*   background: url("../images/index_banner_images/ad_ctr.png") no-repeat 0 top;*/
+    background-color: rgba(117,103,124,0.8);
+}

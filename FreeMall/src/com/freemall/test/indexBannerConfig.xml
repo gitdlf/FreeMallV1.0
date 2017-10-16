@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content>
+		<parentCateId>3</parentCateId>
+		<imageAddress>/images/index_banner_images/1.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>1</parentCateId>
+		<imageAddress>/images/index_banner_images/2.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>8</parentCateId>
+		<imageAddress>/images/index_banner_images/3.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>6</parentCateId>
+		<imageAddress>/images/index_banner_images/4.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>2</parentCateId>
+		<imageAddress>/images/index_banner_images/5.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>1</parentCateId>
+		<imageAddress>/images/index_banner_images/6.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>1</parentCateId>
+		<imageAddress>/images/index_banner_images/7.jpg</imageAddress>
+	</content>
+	<content>
+		<parentCateId>7</parentCateId>
+		<imageAddress>/images/index_banner_images/8.jpg</imageAddress>
+	</content>
+</page>

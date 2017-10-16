@@ -1,0 +1,208 @@
+
+
+
+/*设置侧边框导航的ul格式*/
+.csnul{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    border-style: solid;
+    border-width: 0.5px;
+    font-size: 16px;
+}
+/*设置侧边框导航的li格式*/
+.csnli1{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli2{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli3{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli4{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli5{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli6{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli7{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    border-bottom: solid;
+    padding-top: 5px;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli8{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family: 楷体;
+    /*border-style: solid;*/
+    /*border-width: 0.5px;*/
+    font-size: 16px;
+    padding-top: 5px;
+    border-bottom: solid;
+    border-color: lightyellow;
+    border-width: 0.5px;
+}
+.csnli9{
+    list-style: none;
+    text-align: center;
+    width: 40px;
+    height: 45px;
+    background-color: gainsboro;
+    font-family:  \6977\4F53;
+    /*border-style: solid;*/
+    border-width: 0.5px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/*li标签鼠标移动上去的效果*/
+.csnli1:hover{
+    background-color: red;
+    color: white;
+
+}
+.csnli2:hover{
+    background-color: dodgerblue;
+    color: white;
+
+}
+.csnli3:hover{
+    background-color: #59ecff;
+    color: white;
+
+}
+.csnli4:hover{
+    background-color: #d432ff;
+    color: white;
+
+}
+.csnli5:hover{
+    background-color: #b1ff96;
+    color: white;
+
+}
+.csnli6:hover{
+    background-color: blue;
+    color: white;
+
+}
+.csnli7:hover{
+    background-color:cornflowerblue;
+    color: white;
+
+}
+.csnli8:hover{
+    background-color: firebrick;
+    color: white;
+
+}
+.csnli9:hover{
+    background-color: #ff67b3;
+    color: white;
+
+}
+
+
+/*设置侧导航超链接的格式*/
+.csna{
+    color:black;
+    text-decoration: none;
+
+}
+
+/*鼠标移动上去的效果*/
+.csna:hover{
+    color: white;
+}
+

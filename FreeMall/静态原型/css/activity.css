@@ -1,0 +1,502 @@
+﻿/*最新活动的p标签*/
+.activep_div{
+    width: 50px;
+    height: 33px;
+    padding:0 6px;
+    float: left;
+    /*line-height: 25px;*/
+    /*margin-top: 7px;*/
+    font-family:simsun;
+    /*font-weight:;*/
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+    border: 0 none;
+    /*background-color: black;*/
+    cursor: pointer;
+}
+.activep{
+    width: 44px;
+    height: 29px;
+    line-height: 29px;
+    /*font-family:simsun;*/
+    /*!*font-weight:;*!*/
+    /*font-size: 12px;*/
+    /*text-align: center;*/
+    /*color: gray;*/
+    /*border: 0 none;*/
+
+    /*border-bottom: 210px;*/
+    /*border-style: solid;*/
+    /*border-color: red;*/
+    /*border-width: 1px;*/
+    /*float: left;*/
+    /*line-height: 17px;*/
+    /*margin-top: 7px;*/
+    /*color: red;*/
+    /*border: 1px;*/
+}
+
+.activep_more{
+    float: right;
+    margin-right: 14px;
+}
+
+.activep_more a{
+    color: gray;
+}
+
+.activep_more a:hover{
+    color: red;
+}
+
+.activep_show{
+    border-right: 1px solid #bbbbbb;
+}
+
+.select_show{
+    border-bottom: 4px solid red;
+}
+/*.activep2{
+    width: 50px;
+    height: 17px;
+    padding-top: 3px;
+    font-family:simsun;
+    !*font-weight:;*!
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+    border-right: none;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: none;
+    !*border-bottom: 210px;*!
+    !*border-style: solid;*!
+    border-color: red;
+    border-width: 1px;
+    float: left;
+    !*color: red;*!
+    !*border: 1px;*!
+}
+.activep3{
+    width: 105px;
+    height: 17px;
+    padding-top: 3px;
+    font-family:simsun;
+    !*font-weight:;*!
+    font-size: 15px;
+    text-align:right;
+    color: grey;
+    border-left: none;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: none;
+    border-bottom:solid;
+    !*border-style: solid;*!
+    border-color: red;
+    border-width: 1px;
+    float: left;
+    !*color: red;*!
+    !*border: 1px;*!
+}*/
+
+
+.activeul .activeul_header{
+    width: 210px;
+    height: 30px;
+    /*background-color: red;*/
+    position: relative;
+}
+
+/*最新活动的ul标签*/
+.activeul{
+    width: 210px;
+    height: 100%;
+    /*border-style: solid;*/
+    /*border-color: ;*/
+    /*border-width: 1px;*/
+    background-color: whitesmoke;
+    border-top:1px solid rgb(230, 230, 230);
+    /*padding: 5px;*/
+
+}
+.activeul2{
+    display: none;
+}
+/*最新活动下的一个空格*/
+.activenbsp{
+     width: 210px;
+     height: 14px;
+     list-style: none;
+ }
+/*主页面活动的li标签*/
+.activeli{
+    width: 160px;
+    height: 30px;
+    list-style: none;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     white-space:nowrap;
+}
+/*主页面活动的a标签*/
+.activea{
+    font-size: 15px;
+    border-style: none;
+    text-decoration: none;
+    font-family: simsun;
+    color: gray;
+    font-size: 12px;
+}
+/*主页面活动的a标签鼠标放上去的颜色变化*/
+.activea:hover{
+    color: red;
+}
+/*主页面活动的a标签鼠标点击的颜色变化*/
+.activea:active{
+    color: greenyellow;
+}
+
+
+
+
+
+/*这是活动页面的CSS样式*/
+/*中间*/
+.activitycenter{
+    width: 1216px;
+    height:416px ;
+    /*background-color: #ff354e;*/
+    margin: 0 auto;
+    position: relative;
+    border-bottom: double;
+    border-width: 1px;
+}
+/*中间上边留一个空白的div*/
+/*.activitycenter .upnone{*/
+    /*width: 1216px;*/
+    /*height: 20px;*/
+/*}*/
+/*中间靠左边*/
+.activitycenter .left{
+    width: 210px;
+    height: 340px;
+    /*background-color: #5a43ff;*/
+    float: left;
+}
+
+/*中间靠右边*/
+.activitycenter .rigth{
+    width: 1006px;
+    height:416px ;
+    /*background-color: #1eff24;;*/
+    float: left;
+
+}
+/*中间靠右边的上部分div样式*/
+.activitycenter .rigth .actrup{
+        width: 1006px;
+        height: 35px;
+    padding-left: 20px;
+    background-color:red;
+    /*border-bottom-style:dashed;*/
+    /*border-width: 1px;*/
+    /*margin-top: 10px;*/
+}
+/*中间靠右边的中间div样式*/
+.activitycenter .rigth .actrmiddle{
+    width: 1006px;
+    height: 185px;
+    /*background-color: azure;*/
+    background-color: beige;
+    text-align: left;
+    font-size: 23px;
+    font-family: cursive;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+.activitycenter .rigth .actrmiddle .actrmiddlenone1{
+    width: 150px;
+    height: 180px;
+
+    padding-left:0px;
+    float: left;
+}
+.activitycenter .rigth .actrmiddle .actrmiddlenone2{
+    width: 140px;
+    height: 170px;
+    padding-left:50px;
+    float: left;
+}
+.activitycenter .rigth .actrmiddle .actrmiddlenone3{
+    width: 150px;
+    height: 180px;
+
+    padding-left:50px;
+    float: left;
+}
+.activitycenter .rigth .actrmiddle .actrmiddlenone4{
+    width: 160px;
+    height: 180px;
+    padding-left:50px;
+    float: left;
+}
+.activitycenter .rigth .actrmiddle .actrmiddlenone5{
+    width: 160px;
+    height: 185px;
+    padding-left:50px;
+    float: left;
+}
+/*中间靠右边的下部分div样式*/
+.activitycenter .rigth .actrmiddleup{
+    width: 1006px;
+    height: 40px;
+    /*background-color: azure;*/
+    background-color: beige;
+    text-align: left;
+    font-size: 23px;
+    font-family: cursive;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+/*中间靠右边的尾部div样式*/
+.activitycenter .rigth .actrdown{
+    width: 1006px;
+    height: 126px;
+    text-align: left;
+    padding-left: 70px;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 宋体;
+    /*background-color: #ff9bb8;*/
+
+}
+.activeh4{
+    float: left;
+    padding-left: 10px;
+}
+
+.activeh3{
+    float: left;
+    padding-left: 120px;
+}
+/* 活动主页面的标题样式 */
+
+.activerigthp{
+    font-family:楷体;
+    font-weight: 600;
+    font-size: 25px;
+    text-align:center;
+    padding-bottom: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*设置订单结算过程中的样式*/
+.dobugmiddle{
+    width: 1216px;
+    height: 416px;
+    /*background-color: #ff2ccd;*/
+    margin: auto;
+}
+.dobugmiddle .dobugmiddlecenter{
+    border-color: #3cdfff;
+    border-style: double;
+    border-width: 1px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    font-family: 宋体;
+    text-align:center;
+    line-height: 300px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*这是订单中部的页面*/
+.ordermiddle{
+    height: 400px;
+    width: 1216px;
+    /*background-color: bisque;*/
+    margin: auto;
+}
+.ordermiddle .ordermiddleup{
+    width: 1216px;
+    height: 50px;
+    background-color: #dedede;
+    float: left;
+}
+.ordermiddle .ordermiddleup .ordermiddleupleft1{
+    width: 400px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #0066cb;*/
+    padding-top: 15px;
+    float: left;
+
+}
+.ordermiddle .ordermiddleup .ordermiddleupleft2{
+    width: 400px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #73ffee;*/
+    float: left;
+    padding-top: 15px;
+}
+.ordermiddle .ordermiddleup .ordermiddleupleft3{
+    width: 416px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #7dcc7a;*/
+    float: left;
+}
+
+
+
+
+.ordermiddle .ordermiddlemiddle{
+    width: 1216px;
+    height: 50px;
+    /*background-color:palegoldenrod;*/
+    float: left;
+}
+.ordermiddle .ordermiddlemiddle .ordermiddlemiddleleft1{
+    width: 450px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #73ffee;*/
+    float: left;
+    padding-top: 15px;
+}
+.ordermiddle .ordermiddlemiddle .ordermiddlemiddleleft2{
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #73ffee;*/
+
+    padding-top: 15px;
+    float: left;
+}
+.ordermiddle .ordermiddlemiddle .ordermiddlemiddleleft3{
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #73ffee;*/
+    float: left;
+    padding-top: 15px;
+}
+.ordermiddle .ordermiddlemiddle .ordermiddlemiddleleft4{
+    width: 266px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif, Courier New, "宋体";
+    /*background-color: #73ffee;*/
+    float: left;
+    padding-top: 15px;
+}
+
+
+/*订单中部的下部*/
+.ordermiddle .ordermiddledown{
+    width: 1216px;
+    height: 300px;
+    background-color: mistyrose;
+    float: left;
+
+}
+.ordermiddle .ordermiddledown .ordermiddledownleft1{
+    width: 450px;
+    height: 75px;
+    /*background-color: #1eff24;*/
+    float: left;
+
+}
+.ordermiddle .ordermiddledown .ordermiddledownleft1 .ordermiddledownleft1up{
+    width: 450px;
+    height: 40px;
+    /*background-color: #1eff24;*/
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+.ordermiddle .ordermiddledown .ordermiddledownleft1 .ordermiddledownleft1down{
+    width: 450px;
+    height: 25px;
+    /*background-color: #1eff24;*/
+    float: left;
+    font-weight: 100;
+    font-size: 5px;
+    font-family: 宋体;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.ordermiddledowna{
+    text-decoration: none;
+}
+.ordermiddledowna:hover{
+    color: #3cdfff;
+}
+
+.ordermiddle .ordermiddledown .ordermiddledownleft2{
+    width: 250px;
+    height: 45px;
+    /*background-color: #1eff24;*/
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ordermiddle .ordermiddledown .ordermiddledownleft3{
+    width: 250px;
+    height: 45px;
+    /*background-color: #1eff24;*/
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ordermiddle .ordermiddledown .ordermiddledownleft4{
+    width: 250px;
+    height: 45px;
+    /*background-color: #1eff24;*/
+    float: left;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+
+

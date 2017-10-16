@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content>
+		<!-- 页面中部标题 -->
+		<title>爱家电</title>
+		<!-- 页面中标签 -->
+		<tag>冰箱</tag>
+		<tag>空调</tag>
+		<tag>洗衣机</tag>
+		<!-- 所属父类id -->
+		<parentCateId>1</parentCateId>
+	</content>
+	<content>
+		<title>搞机派</title>
+		<tag>金属机身</tag>
+		<tag>快速充电</tag>
+		<tag>拍照神器</tag>
+		<parentCateId>2</parentCateId>
+	</content>
+	<content>
+		<title>电脑数码</title>
+		<tag>游戏极品</tag>
+		<tag>装机大师</tag>
+		<tag>职场换新</tag>
+		<parentCateId>3</parentCateId>
+	</content>
+	<content>
+		<title>电脑数码</title>
+		<tag>虚拟现实</tag>
+		<tag>电子教育</tag>
+		<tag>飞行馆</tag>
+		<parentCateId>3</parentCateId>
+	</content>
+	<content>
+		<title>玩3C</title>
+		<tag>数码</tag>
+		<tag>电脑</tag>
+		<tag>路由器</tag>
+		<parentCateId>3</parentCateId>
+	</content>
+	<content>
+		<title>爱运动</title>
+		<tag>跑步鞋</tag>
+		<tag>电动车</tag>
+		<tag>动感单车</tag>
+		<parentCateId>5</parentCateId>
+	</content>
+	<content>
+		<title>爱宝宝</title>
+		<tag>洗护喂养</tag>
+		<tag>奶粉辅食</tag>
+		<tag>婴儿推车</tag>
+		<parentCateId>6</parentCateId>
+	</content>
+	<content>
+		<title>爱宝宝</title>
+		<tag>洗护喂养</tag>
+		<tag>奶粉辅食</tag>
+		<tag>婴儿推车</tag>
+		<parentCateId>6</parentCateId>
+	</content>
+	<content>
+		<title>爱家</title>
+		<tag>装修</tag>
+		<tag>花洒</tag>
+		<tag>餐具</tag>
+		<parentCateId>7</parentCateId>
+	</content>
+</page>	

@@ -1,0 +1,10 @@
+<c3p0-config>
+  <default-config>
+     <property name="driverClass">oracle.jdbc.driver.OracleDriver</property> 
+     <property name="jdbcUrl">jdbc:oracle:thin:@172.20.20.2:1521:XE</property> 
+     <property name="user">freemall</property> 
+     <property name="password">freemall</property> 
+     <property name="initialPoolSize">10</property> 
+     <property name="maxPoolSize">30</property> 
+  </default-config>
+</c3p0-config>

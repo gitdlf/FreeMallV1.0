@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/basketlf.css">
+    <link rel="stylesheet" href="../css/content2.css">
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/content2.js"></script>
+    <script src="../js/basket.js"></script>
+</head>
+<body>
+    <div class="header">
+    <!--头部上方-->
+    <div class="hd_top_bar">
+        <div class="hd_warp">
+            <!--左边-->
+            <div class="hd_warp_left">
+                <!--未登录状态-->
+                <!--<div class="hd_unlogin">
+                    <a class="hd_login_page" href="#">Hi,请登录</a>
+                    <a class="hd_register_page" href="#">注册</a>
+                </div>-->
+                <!--登录状态-->
+                <div class="hd_login" id="hdLogin">
+                    <a href="javascript:;" class="hd_login_info">Hi,LFSenior</a>
+                </div>
+                <div class="hd_user_privilege">
+                    <a href="#" class="hd_login_out">退出登录</a>
+                    <div class="hd_user_clearfix">
+                        <div class="hd_user_img">
+                            <img src="../images/header/peopleicon_02.gif" alt="">
+                        </div>
+                        <div class="hd_user_f1">
+                            <a href="javascript:;" class="hd_user_name">lfsenior</a>
+                            <a href="javascript:;" class="hd_vip">尊贵的会员</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="hd_top_right">
+                <ul>
+                    <li class="hd_has_child">
+                        <!--我的订单-->
+                        <div class="hd_menu">
+                            <a href="">我的订单</a>
+                        </div>
+
+                    </li>
+                    <li class="hd_has_child">
+                        <!--收藏-->
+                        <div class="hd_menu">
+                            <a href="">网页收藏</a>
+                        </div>
+                    </li>
+                    <li class="hd_has_child">
+                        <!--网站导航-->
+                        <div class="hd_menu" id="hd_menu_nav">
+                            <a href="javascript:;" > 网站导航</a>
+                        </div>
+                        <div class="hd_menu_list">
+                            <a href="#" target="_blank">导航位1</a>
+                            <a href="#" target="_blank">导航位2</a>
+                            <a href="#" target="_blank">导航位3</a>
+                            <a href="#" target="_blank">导航位4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--头部下方-->
+    <div class="hd_content_var">
+        <div class="hd_logo_area">
+            <!--跳转到首页-->
+            <a href="#" class="hd_logo">
+                <!--261*150-->
+                <img src="../images/header/logo.png" width="261px" height="150px" alt="网站logo">
+            </a>
+        </div>
+        <div class="hd_content_right">
+            <div class="hd_clearfix">
+                <div class="hd_search">
+                    <div class="hd_search_form">
+                        <input type="text" class="hd_search_ipt" id="hdSearchIpt" placeholder="请输入关键字">
+                        <a href="#" class="hd_search_btn" id="hdSearchBtn"></a>
+                    </div>
+                </div>
+                <div class="hd_mini_cart">
+                    <a href="#" class="hd_cart_name" id="hdCarName">购物车</a>
+                    <div class="hd_cart_show">
+                        <!--购物车有物品-->
+                        <div class="hd_tips">
+                            <div class="hd_cart_wrap">
+                                <div class="hd_cart_list" id="hdCartList">
+                                    <!--商品详情-->
+                                    <dl>
+                                        <!--头部提示-->
+                                        <dt>
+                                            <a href="" class="hd_cart_list_titl">自由购</a>
+                                            <span>
+                                                共<i></i>件商品
+                                            </span>
+                                        </dt>
+                                        <!--商品详情页-->
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="../images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl">8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="../images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl" >8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="hd_totla_pro">
+                                <div class="f1">
+                                    <span class="hd_all">合计</span>
+                                    <b><em>￥<span class="pro_all_totl" id="proALlTotl"></span></em></b>
+                                </div>
+                                <a href="" class="hd_cart_btn">打开购物车</a>
+                            </div>
+                        </div>
+                        <!--购物车没有物品-->
+                        <!--<div class="hd_none_tips">
+                            <span class="hd_none_icon"></span>
+                            <p class="hd_none_text">您的购物车里还没有1号店的商品哦~~</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="hd_header_nav">
+                <p class="hd_hot_search">
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--商品详情页内容，宽度为1216,居中，其他没有要求-->
+    <div class="yhd_cart_content">
+            <!--商品展示start-->
+            <div id="cart_main_body">
+                <!--配置全局配置的位置-->
+                <!--商品区域-->
+                <div class="wrap">
+                    <!--头部开始-->
+                   <div class="wrap_limit">
+                       <div class="cart_list_header">
+                        <span class="checkbox">
+                            <!--如果选择添加checked 样式-->
+                            <input type="checkbox" class="check check_all checked" id="all_checked">
+                                <i class="iconfont">v</i>
+                            </input>
+                            全选
+                        </span>
+                           <span class="tit">商品信息</span>
+                           <span class="price">单价（元）</span>
+                           <span class="num">数量</span>
+                           <span class="total">小计（元）</span>
+                           <span class="act">操作</span>
+                       </div>
+                   </div>
+                    <!--头部结束-->
+                    <!--//利用form表单传输数据-->
+                    <form action="/www.baidu.com" method="post">
+                        <div class="cart_list_limit" id="cartShopList">
+                            <div class="cart_list cart_shop_list" >
+                                <!--楼层头-->
+                                <div class="cart_tit">
+                                <span class="checkbox">
+                                    <input type="checkbox" class="check check_list checked">
+                                    <a href="#" class="label">FreeMall官方旗舰店</a>
+                                </span>
+                                    <!--已免邮-->
+                                    <div class="free_pos">
+                                        已免邮
+                                    </div>
+                                </div>
+
+                                <!--商品内容-->
+                                <div class="cart_list_warp">
+                                    <div class="cart_list_item">
+                                        <!--商品详情-->
+                                        <a href="#" class="item_pic">
+                                            <img src="../images/goodsinfo/shop_bean.jpg" width="75px" height="75px" alt="">
+                                        </a>
+                                        <a href="#"  class="item_tit" >
+                                            Jeanswest/真维斯 春秋装 女装 弹性舒适紧身高腰休闲长裤JW-54-2510女装 弹性舒适紧身高腰休闲长裤JW-54-2510女装 弹性舒适紧身高腰休闲长裤JW-54-2510028500 蓝色2 蓝色2 蓝色2
+                                        </a>
+                                        <!--单价-->
+                                        <div class="item_price">
+                                            <p>160.00</p>
+                                        </div>
+                                        <!--数量-->
+                                        <div class="item_num">
+                                            <div class="num_act">
+                                                <!--库存-->
+                                                <label class="stockNum" style="display: none">12</label>
+                                                <a href="javascript:;" class="minus">-</a>
+                                                <input type="text" class="input" value="1">
+                                                <a href="javascript:;" class="add">+</a>
+                                            </div>
+                                            <span class="stock">库存紧张</span>
+                                        </div>
+                                        <!--小计-->
+                                        <div class="item_amount">
+                                            <div class="item_a_money">160.00</div>
+                                        </div>
+                                        <!--操作-->
+                                        <div class="item_act">
+                                            <a href="" title="删除" class="del_btn">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="clear: both;width: 100%;height: 20px" ></div>
+                            </div>
+                            <div class="cart_list cart_shop_list">
+                                <!--楼层头-->
+                                <div class="cart_tit">
+                                <span class="checkbox">
+                                    <input type="checkbox" class="check check_list checked">
+                                    <a href="#" class="label">FreeMall官方旗舰店</a>
+                                </span>
+                                    <!--已免邮-->
+                                    <div class="free_pos">
+                                        已免邮
+                                    </div>
+                                </div>
+
+                                <!--商品内容-->
+                                <div class="cart_list_warp">
+                                    <div class="cart_list_item">
+                                        <!--商品详情-->
+                                        <a href="#" class="item_pic">
+                                            <img src="../images/goodsinfo/shop_bean.jpg" width="75px" height="75px" alt="">
+                                        </a>
+                                        <a href="#"  class="item_tit" >
+                                            Jeanswest/真维斯 春秋装 女装 弹性舒适紧身高腰休闲长裤JW-54-2510女装 弹性舒适紧身高腰休闲长裤JW-54-2510女装 弹性舒适紧身高腰休闲长裤JW-54-2510028500 蓝色2 蓝色2 蓝色2
+                                        </a>
+                                        <!--单价-->
+                                        <div class="item_price">
+                                            <p>160.00</p>
+                                        </div>
+                                        <!--数量-->
+                                        <div class="item_num">
+                                            <div class="num_act">
+                                                <!--库存-->
+                                                <label class="stockNum" style="display: none">12</label>
+                                                <a href="javascript:;" class="minus">-</a>
+                                                <input type="text" class="input" value="1">
+                                                <a href="javascript:;" class="add">+</a>
+                                            </div>
+                                            <span class="stock">库存紧张</span>
+                                        </div>
+                                        <!--小计-->
+                                        <div class="item_amount">
+                                            <div class="item_a_money">160.00</div>
+                                        </div>
+                                        <!--操作-->
+                                        <div class="item_act">
+                                            <a href="" title="删除" class="del_btn">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="clear: both;width: 100%;height: 20px" ></div>
+                            </div>
+                            <div class="cart_list cart_shop_list">
+                                <!--楼层头-->
+                                <div class="cart_tit">
+                                <span class="checkbox">
+                                    <input type="checkbox" class="check check_list checked">
+                                    <a href="#" class="label">FreeMall官方旗舰店</a>
+                                </span>
+                                    <!--已免邮-->
+                                    <div class="free_pos">
+                                        已免邮
+                                    </div>
+                                </div>
+
+                                <!--商品内容-->
+                                <div class="cart_list_warp">
+                                    <div class="cart_list_item">
+                                        <!--商品详情-->
+                                        <a href="#" class="item_pic">
+                                            <img src="../images/goodsinfo/shop_bean.jpg" width="75px" height="75px" alt="">
+                                        </a>
+                                        <a href="#"  class="item_tit" >
+                                            Jeanswest/真维斯 春秋装 女装 弹性舒适紧身高腰休闲长裤JW-54-2510女装 弹性舒适紧身高腰休闲长裤JW-54-2510女装 弹性舒适紧身高腰休闲长裤JW-54-2510028500 蓝色2 蓝色2 蓝色2
+                                        </a>
+                                        <!--单价-->
+                                        <div class="item_price">
+                                            <p>160.00</p>
+                                        </div>
+                                        <!--数量-->
+                                        <div class="item_num">
+                                            <div class="num_act">
+                                                <!--库存-->
+                                                <label class="stockNum" style="display: none">12</label>
+                                                <a href="javascript:;" class="minus">-</a>
+                                                <input type="text" class="input" value="1">
+                                                <a href="javascript:;" class="add">+</a>
+                                            </div>
+                                            <span class="stock">库存紧张</span>
+                                        </div>
+                                        <!--小计-->
+                                        <div class="item_amount">
+                                            <div class="item_a_money">160.00</div>
+                                        </div>
+                                        <!--操作-->
+                                        <div class="item_act">
+                                            <a href="/www.baidu.com" title="删除123" class="del_btn">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="clear: both;width: 100%;height: 20px" ></div>
+                            </div>
+                        </div>
+                        <!--结算工具栏开始-->
+                        <div id="checkOutBar" class="setting_column_bar ">
+                            <div class="pay_tools_bar">
+                                <div class="pay_tools_inner">
+                                    <div class="clearfix">
+                                        <span class="select_all_innser">
+                                            <input type="checkbox" id="selectAllInner">
+                                            <label class="all_checked_label">全选（共<b></b>件)</label>
+                                        </span>
+                                        |
+                                        <span></span>
+                                    </div>
+                                    <div class="clearfix_right">
+                                        <!--如果没有选择商品的话就添加unable-->
+                                        <a href="javascript:;" class="checkout_btn unable" id="checkoutBtn">去结算</a>
+                                        <input id="checkoutSubmit" type="submit" style="visibility: hidden">
+                                        <!--<button class="checkout_btn unable">去结算</button>-->
+                                        <div class="r_price_total" id="rPriceTotal">
+                                            合计：
+                                            <span class="rpt_count">￥<b>0.00</b></span>
+                                        </div>
+                                        <div class="r_prod_view">
+                                            <span class="rpt_count" id="rptCount">
+                                                已选商品
+                                                <b></b>
+                                                件
+                                            </span>|
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--结算工具栏结束-->
+                    </form>
+                </div>
+            </div>
+            <!--商品展示end-->
+    </div>
+    <div style="width: 100%;height: 50px;"></div>
+    <div class="fooder"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

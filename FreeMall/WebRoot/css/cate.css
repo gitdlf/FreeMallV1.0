@@ -1,0 +1,143 @@
+
+.cate_main{
+    /*display: none;*/
+    width: 660px;
+    height: 340px;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+/*
+分类容器
+*/
+.category{
+    width: 210px;
+    height: 312px;
+    margin: 14px 0px;
+    background-color: antiquewhite;
+}
+/*
+分类列表
+*/
+.category_list{
+    width: 210px;
+    height: 312px;
+    background-color:  #6e6568;
+}
+/*
+分类详细列表
+*/
+.category_list li{
+    list-style: none;
+    width: 210px;
+    height: 52px;
+    background-color:  #6e6568;
+}
+
+/*
+分类列表中的超链接
+*/
+.category_list li a{
+text-decoration: none;
+    color: #edebf8;
+}
+/*
+隐藏列表
+*/
+.hidden_main{
+    display: block;
+    width: 450px;
+    height: 340px;
+    margin-top: 0px;
+    margin-left: 210px;
+    background-color: #ff2ccd;
+    position: absolute;
+}
+/*
+隐藏部分
+*/
+.hidden_part{
+    display: none;
+    width: 450px;
+    height: 340px;
+    z-index: 2;
+    background-color: #f3f3f7;
+    position: absolute;
+
+}
+
+/*
+隐藏部分列表
+*/
+.hidden_list li{
+    list-style: none;
+    width: 450px;
+    height: 340px;
+    position: absolute;
+    text-align: left;
+}
+
+
+.category_list li:hover{
+    background-color: #999395;
+}
+
+/*鼠标经过超链接时，超链接的颜色*/
+.category_list li a:hover{
+    color: #ff3c3c;
+}
+
+
+.cates{
+    width: 190px;
+    height: 48px;
+    margin: 0 auto;
+}
+
+
+.cates a{
+    display: inline-block;
+    /*line-height: 48;*/
+    height: 100%;
+    line-height: 48px;
+}
+
+
+/*商品详细分类*/
+.details{
+    width: 440px;
+    height: 50px;
+    margin: 30px 40px;
+}
+
+.img_details{
+    width: 450px;
+    height: 260px;
+
+}
+
+.details .limit_details{
+    width: 400px;
+    height: 65px;
+    overflow: hidden;
+    /*background-color: red;*/
+}
+
+
+.details a{
+	display: inline-block;
+    margin:5px 10px;
+    text-decoration: none;
+    color: #a2a2a6;
+}
+
+.details a:hover{
+
+    color: red;
+}
+
+.img_details img{
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+}

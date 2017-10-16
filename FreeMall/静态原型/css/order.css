@@ -1,0 +1,356 @@
+.ordermiddle{
+    width: 980px;
+    margin: 20px auto 50px;
+    /*height: 500px;*/
+    /*border: 1px solid red;*/
+    font: 12px/1.5 tahoma,arial,Hiragino Sans GB,\\5B8B\4F53,sans-serif;
+    position: relative;
+}
+
+.ordermiddle .order_panel{
+    width: 100%;
+    /*height: 100%;*/
+    top: -2px;
+    position: relative;
+    clear: both;
+    overflow: hidden!important;
+}
+
+.ordermiddle .order_panel .tabs_mod_container{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main{
+    position: relative;
+    bottom: -2px;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main .tabs_mod_tab{
+    display: inline-block;
+    position: relative;
+    border-bottom: 2px solid #e8e8e8;
+    cursor: pointer;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: tahoma, arial, "Microsoft YaHei", "Hiragino Sans GB", u5b8bu4f53, sans-serif;
+    color: #5f5f5f;
+}
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main a:hover{
+    color: #e4393c;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main .show{
+    padding-bottom: 0;
+    color: #e4393c;
+    border-bottom: 2px solid #e4393c;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main .tabs_mod_tab .nav_mod_tab{
+    display: inline-block;
+    line-height: 1;
+    padding: 0 20px 12px;
+    font-size: 12px;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main .tabs_mod_tab .nav_mod_tab .nav_mod_text{
+    font-weight: 700;
+    font-family: Microsoft YaHei;
+}
+
+.ordermiddle .order_panel .tabs_mod_container .tabs_mod_main .tabs_mod_tab .nav_mod_tab .tabs_mod_sep{
+    background-color: #e8e8e8;
+    width: 1px;
+    height: 14px;
+    top: 2px;
+    right: 0;
+    font-size: 0;
+    color: #e8e8e8;
+    position: absolute;
+}
+
+
+.ordermiddle .order_panel .search_mod_simple{
+    margin-bottom: 20px;
+}
+
+.ordermiddle .order_panel .search_mod_simple .search_mod_input{
+    width: 236px;
+    padding: 4px 8px;
+    font: inherit;
+    overflow: visible;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 26px;
+    vertical-align: middle;
+    border: 1px solid #bfbfbf;
+}
+
+.ordermiddle .order_panel .search_mod_simple .search_mod_btn{
+    margin-right: 12px;
+    padding: 0 16px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 26px;
+    vertical-align: middle;
+    border: 1px solid #bfbfbf;
+    margin-left: -4px;
+    font-size: 12px;
+}
+
+.ordermiddle .order_panel .bought_mod{
+    margin: 10px 0;
+    background-color: #f2f2f2;
+    border: 1px solid #cfcfcf;
+    /*text-align: center;*/
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #3c3c3c;
+    table-layout: fixed;
+    display: table;
+}
+.ordermiddle .order_panel .bought_mod div{
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    line-height: 29px;
+    height: 29px;
+    text-align: center;
+}
+.ordermiddle .order_panel .bought_mod .bougth_mod_content{
+    width: 334px;
+}
+.ordermiddle .order_panel .bought_mod .bought_mod_price{
+    width: 87px;
+}
+.ordermiddle .order_panel .bought_mod .bought_mod_number{
+    width: 44px;
+}
+.ordermiddle .order_panel .bought_mod .bought_mod_option{
+    width: 104px;
+}
+.ordermiddle .order_panel .bought_mod .bought_mod_pay{
+    width: 104px;
+}
+.ordermiddle .order_panel .bought_mod .bought_mod_state{
+    width: 95px;
+}
+.ordermiddle .order_panel .bought_mod .bought_mod_deal_option{
+    width: 200px;
+    float: right;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order{
+    position: relative;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item{
+    border: 1px solid #ececec;
+    position: relative;
+    margin-bottom: 40px;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item:hover{
+    border-color: #bfbfbf;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_hd{
+    vertical-align: inherit;
+    background-color: #f1f1f1;
+    height: 40px;
+    /*width: 100%;*/
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_hd .order_item_date,.order_item_no{
+    display: inline-block;
+    height: 40px;
+    padding:0 5px;
+    line-height: 40px;
+    margin-left:40px;
+    font-weight: 700;
+    color: #959595;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_hd .order_item_no em{
+    color: #454545;
+    font-size: 10px;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content{
+    background-color: #fdfdfe;
+    position: relative;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item{
+    width: 530px;
+    height: 70px;
+    padding: 20px;
+    /*background-color: red;*/
+    /*clear: both;*/
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_media_img{
+    float: left;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_media_detail{
+    text-decoration: none;
+    /*color: black;*/
+    width: 220px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    float: left;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_media_detail a{
+    text-decoration: none;
+    color: #474747;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_media_detail a:hover{
+    color: red;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_pro_price{
+    width: 60px;
+    height: 60px;
+    /*background-color: red;*/
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_pro_number{
+    width: 44px;
+    height: 60px;
+    /*background-color: red;*/
+    float: left;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: -10px;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_pro_option{
+    width: 60px;
+    height: 60px;
+    /*background-color: red;*/
+    float: left;
+    /*padding: 10px;*/
+    padding-top: 10px;
+    /*padding-left: 5px;*/
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 15px;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_pro_option a{
+    text-decoration: none;
+    color: #959595;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .order_pro_list .order_pro_item .order_pro_info .mod_pro_option a:hover{
+    color: red;
+}
+
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_allPrice{
+    position: absolute;
+    top: 0px;
+    left: 571px;;
+    width: 104px;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    /*padding: 20px;*/
+}
+
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_allPrice span{
+    display: inline-block;
+    font-weight: 700;
+    width: 104px;
+    margin-top: 30px;
+    text-align: center;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_state{
+    position: absolute;
+    top: 0px;
+    left: 675px;;
+    width: 104px;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_state .cur{
+    display: inline-block;
+}
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_state span{
+    display: inline-block;
+    width: 104px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_state dd{
+    display: none;
+}
+
+.ordermiddle .order_panel .bought_wrapper_order_item .order_item_content .pro_item_option{
+    width: 199px;
+    position: absolute;
+    top: 0px;
+    right: 0px;;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    /*padding: 20px;*/
+    /*background-color: red;*/
+}
+
+.margin_button{
+    width: 199px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.margin_button .margin_btn{
+    width: 60px;
+    margin:0 auto;
+    display: none;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d8d8d8;
+    background-color: #fafafa;
+    border-radius: 5px;
+    color: #3c3c3c;
+}
+
+.margin_button .show{
+    display: block;
+}
+.margin_button .margin_btn:hover{
+    border-color: red;
+    color: red;
+}
+
+

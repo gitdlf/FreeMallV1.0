@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script src="../js/jquery-1.11.1.js"></script>
+    <script src="../js/content2.js"></script>
+    <link type="text/css" href="../css/base.css" rel="stylesheet">
+    <link type="text/css" href="../css/content2.css" rel="stylesheet" >
+</head>
+<body >
+<div class="header">
+    <!--头部上方-->
+    <div class="hd_top_bar">
+        <div class="hd_warp">
+            <!--左边-->
+            <div class="hd_warp_left">
+                <!--未登录状态-->
+                <!--<div class="hd_unlogin">
+                    <a class="hd_login_page" href="#">Hi,请登录</a>
+                    <a class="hd_register_page" href="#">注册</a>
+                </div>-->
+                <!--登录状态-->
+                <div class="hd_login" id="hdLogin">
+                    <a href="javascript:;" class="hd_login_info">Hi,LFSenior</a>
+                </div>
+                <div class="hd_user_privilege">
+                    <a href="#" class="hd_login_out">退出登录</a>
+                    <div class="hd_user_clearfix">
+                        <div class="hd_user_img">
+                            <img src="../images/header/peopleicon_02.gif" alt="">
+                        </div>
+                        <div class="hd_user_f1">
+                            <a href="javascript:;" class="hd_user_name">lfsenior</a>
+                            <a href="javascript:;" class="hd_vip">尊贵的会员</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="hd_top_right">
+                <ul>
+                    <li class="hd_has_child">
+                        <!--我的订单-->
+                        <div class="hd_menu">
+                            <a href="">我的订单</a>
+                        </div>
+
+                    </li>
+                    <li class="hd_has_child">
+                        <!--收藏-->
+                        <div class="hd_menu">
+                            <a href="">网页收藏</a>
+                        </div>
+                    </li>
+                    <li class="hd_has_child">
+                        <!--网站导航-->
+                        <div class="hd_menu" id="hd_menu_nav">
+                            <a href="javascript:;" > 网站导航</a>
+                        </div>
+                        <div class="hd_menu_list">
+                            <a href="#" target="_blank">导航位1</a>
+                            <a href="#" target="_blank">导航位2</a>
+                            <a href="#" target="_blank">导航位3</a>
+                            <a href="#" target="_blank">导航位4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--头部下方-->
+    <div class="hd_content_var">
+        <div class="hd_logo_area">
+            <!--跳转到首页-->
+            <a href="#" class="hd_logo">
+                <!--261*150-->
+                <img src="../images/header/logo.png" width="261px" height="150px" alt="网站logo">
+            </a>
+        </div>
+        <div class="hd_content_right">
+            <div class="hd_clearfix">
+                <div class="hd_search">
+                   <div class="hd_search_form">
+                       <input type="text" class="hd_search_ipt" id="hdSearchIpt" placeholder="请输入关键字">
+                       <a href="#" class="hd_search_btn" id="hdSearchBtn"></a>
+                   </div>
+                </div>
+                <div class="hd_mini_cart">
+                    <a href="#" class="hd_cart_name" id="hdCarName">购物车</a>
+                    <div class="hd_cart_show">
+                        <!--购物车有物品-->
+                        <div class="hd_tips">
+                            <div class="hd_cart_wrap">
+                                <div class="hd_cart_list" id="hdCartList">
+                                    <!--商品详情-->
+                                    <dl>
+                                        <!--头部提示-->
+                                        <dt>
+                                            <a href="" class="hd_cart_list_titl">自由购</a>
+                                            <span>
+                                                共<i></i>件商品
+                                            </span>
+                                        </dt>
+                                        <!--商品详情页-->
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="../images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl">8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="../images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl" >8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="hd_totla_pro">
+                                <div class="f1">
+                                    <span class="hd_all">合计</span>
+                                    <b><em>￥<span class="pro_all_totl" id="proALlTotl"></span></em></b>
+                                </div>
+                                <a href="" class="hd_cart_btn">打开购物车</a>
+                            </div>
+                        </div>
+                        <!--购物车没有物品-->
+                        <!--<div class="hd_none_tips">
+                            <span class="hd_none_icon"></span>
+                            <p class="hd_none_text">您的购物车里还没有1号店的商品哦~~</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="hd_header_nav">
+                <p class="hd_hot_search">
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login_content">
+    <div class="login_image">
+    <!--图片大小宽：510px 高：315px-->
+    <img src="../images/login/login_info.jpg" width="510px" height="315px">
+    </div>
+    <div class="login_info">
+        <div class="clearfix">
+            <span>自由购用户登录</span>
+            <a href="#">注册新账号</a>
+        </div>
+        <div class="form_item_wrap">
+            <form action="#" method="post" id="login_form">
+                <!--330px*54px-->
+                <div class="form_item">
+                    <label class="user_ico">&nbsp;</label>
+                    <input type="text" class="input_user ipt" placeholder="用户名">
+                </div>
+                <div class="form_item">
+                    <label class="pwd_ico">&nbsp;</label>
+                    <input type="password" class="input_pwd ipt" placeholder="密码">
+                </div>
+                <div class="clearfix auto_login">
+                    <!--<span>自动登录</span>-->
+                    <a href="#">忘记密码？</a>
+                </div>
+                <div>
+                    <input type="submit" class="login_btn" id="login_btn">
+                </div>
+            </form>
+            <div class="clearfix">
+                <!--内容为error提示，提示登陆失败-->
+                <label class="error_info" id="error_info"></label>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 50px;clear: both"></div>
+<div class="fooder">
+    <div>
+        <!--版权声明-->
+        <span class="statement">Copyright © 2017 FreeMall All Rights Reserved</span>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FreeMall</title>
+    <link type="text/css" href="./css/base.css" rel="stylesheet">
+    <link type="text/css" href="./css/side-nav.css" rel="stylesheet">
+    <link type="text/css" href="./css/activity.css" rel="stylesheet">
+    <link type="text/css"  href="./css/banner.css" rel="stylesheet">
+    <link type="text/css" href="./css/cate.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/goodsinfo.css" type="text/css">
+    <link rel="stylesheet" href="./css/content2.css" type="text/css">
+    <script type="text/javascript" src="./js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/index_banner.js"></script>
+    <script type="text/javascript" src="js/index_cate.js"></script>
+    <script src="./js/content2.js"></script>
+</head>
+<body>
+<div class="header">
+    <!--头部上方-->
+    <div class="hd_top_bar">
+        <div class="hd_warp">
+            <!--左边-->
+            <div class="hd_warp_left">
+                <!--未登录状态-->
+                <!--<div class="hd_unlogin">
+                    <a class="hd_login_page" href="#">Hi,请登录</a>
+                    <a class="hd_register_page" href="#">注册</a>
+                </div>-->
+                <!--登录状态-->
+                <div class="hd_login" id="hdLogin">
+                    <a href="javascript:;" class="hd_login_info">Hi,LFSenior</a>
+                </div>
+                <div class="hd_user_privilege">
+                    <a href="#" class="hd_login_out">退出登录</a>
+                    <div class="hd_user_clearfix">
+                        <div class="hd_user_img">
+                            <img src="./images/header/peopleicon_02.gif" alt="">
+                        </div>
+                        <div class="hd_user_f1">
+                            <a href="javascript:;" class="hd_user_name">lfsenior</a>
+                            <a href="javascript:;" class="hd_vip">尊贵的会员</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边-->
+            <div class="hd_top_right">
+                <ul>
+                    <li class="hd_has_child">
+                        <!--我的订单-->
+                        <div class="hd_menu">
+                            <a href="">我的订单</a>
+                        </div>
+
+                    </li>
+                    <li class="hd_has_child">
+                        <!--收藏-->
+                        <div class="hd_menu">
+                            <a href="">网页收藏</a>
+                        </div>
+                    </li>
+                    <li class="hd_has_child">
+                        <!--网站导航-->
+                        <div class="hd_menu" id="hd_menu_nav">
+                            <a href="javascript:;" > 网站导航</a>
+                        </div>
+                        <div class="hd_menu_list">
+                            <a href="#" target="_blank">导航位1</a>
+                            <a href="#" target="_blank">导航位2</a>
+                            <a href="#" target="_blank">导航位3</a>
+                            <a href="#" target="_blank">导航位4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--头部下方-->
+    <div class="hd_content_var">
+        <div class="hd_logo_area">
+            <!--跳转到首页-->
+            <a href="#" class="hd_logo">
+                <!--261*150-->
+                <img src="./images/header/logo.png" width="261px" height="150px" alt="网站logo">
+            </a>
+        </div>
+        <div class="hd_content_right">
+            <div class="hd_clearfix">
+                <div class="hd_search">
+                    <div class="hd_search_form">
+                        <input type="text" class="hd_search_ipt" placeholder="请输入关键字">
+                        <a href="#" class="hd_search_btn"></a>
+                    </div>
+                </div>
+                <div class="hd_mini_cart">
+                    <a href="#" class="hd_cart_name" id="hdCarName">购物车</a>
+                    <div class="hd_cart_show">
+                        <!--购物车有物品-->
+                        <div class="hd_tips">
+                            <div class="hd_cart_wrap">
+                                <div class="hd_cart_list" id="hdCartList">
+                                    <!--商品详情-->
+                                    <dl>
+                                        <!--头部提示-->
+                                        <dt>
+                                            <a href="" class="hd_cart_list_titl">自由购</a>
+                                            <span>
+                                                共<i></i>件商品
+                                            </span>
+                                        </dt>
+                                        <!--商品详情页-->
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="./images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl">8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+
+
+                                        <dd class="hd_cart_cur">
+                                            <div class="hd_cart_item">
+                                                <!--60*60-->
+                                                <img class="hd_pro_img" src="./images/header/bean.jpg" alt="" width="50px" height="50px">
+                                                <div class="hd_cart_detail">
+                                                    <a href="" class="hd_pro_name">绿豆 750g</a>
+                                                    <p><em>￥<span class="pro_totl" >8.88</span></em></p>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="hd_totla_pro">
+                                <div class="f1">
+                                    <span class="hd_all">合计</span>
+                                    <b><em>￥<span class="pro_all_totl" id="proALlTotl"></span></em></b>
+                                </div>
+                                <a href="" class="hd_cart_btn">打开购物车</a>
+                            </div>
+                        </div>
+                        <!--购物车没有物品-->
+                        <!--<div class="hd_none_tips">
+                            <span class="hd_none_icon"></span>
+                            <p class="hd_none_text">您的购物车里还没有1号店的商品哦~~</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="hd_header_nav">
+                <p class="hd_hot_search">
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                    <a href="" target="_blank">冰糖</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="middle">
+    <div class="cate_main">
+        <div class="cate">
+            <div class="category">
+                <ol class="category_list">
+                    <li class="cate_menu_item">
+                        <div class="cates"><a href="#">家用电器</a></div>
+                    </li>
+                    <li class="cate_menu_item">
+                        <div class="cates"><a href="#">手机</a></div>
+                    </li>
+                    <li class="cate_menu_item">
+                        <div class="cates"><a href="#">美妆</a></div>
+                    </li>
+                    <li class="cate_menu_item">
+                        <div class="cates"><a href="#">时装</a></div>
+                    </li>
+                    <li class="cate_menu_item">
+                        <div class="cates"><a href="#">电脑</a></div>
+                    </li>
+                    <li class="cate_menu_item">
+                        <div class="cates"><a href="#">智能设备</a></div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="hidden_main">
+            <ol class="hidden_list">
+                <li class="hidden_list_item">
+                    <div class="hidden_part">
+                        <div class="details">
+                            <div class="linmit_details">
+                                <a href="#">空气净化器</a>
+                                <a href="#">净水器</a>
+                                <a href="#">洗衣机</a>
+                                <a href="#">电饭煲</a>
+                                <a href="#">吹风机吹风机吹风机吹风机吹风机</a>
+                                <a href="#">空气净化器</a>
+                                <a href="#">净水器</a>
+                                <a href="#">洗衣机</a>
+                                <a href="#">电饭煲</a>
+                                <a href="#">吹风机</a>
+                            </div>
+                        </div>
+                        <div class="img_details">
+                            <a href="#"><img src="images/index_cate_images/1.webp" ></a>
+                            <a href="#"><img src="images/index_cate_images/2.jpg" ></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="hidden_list_item">
+                    <div class="hidden_part">
+                        <div class="details">
+                            <a href="#">华为</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">小米</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">魅族</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">苹果</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">中兴</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="img_details">
+                            <a href="#"><img src="images/index_cate_images/3.webp" ></a>
+                            <a href="#"><img src="images/index_cate_images/4.webp" ></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="hidden_list_item">
+                    <div class="hidden_part">
+                        <div class="details">
+                            <a href="#">洗面奶</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">口红</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">腮红</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">眉笔</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">BB霜</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="img_details">
+                            <a href="#"><img src="images/index_cate_images/5.jpg" ></a>
+                            <a href="#"><img src="images/index_cate_images/6.jpg" ></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="hidden_list_item">
+                    <div class="hidden_part">
+                        <div class="details">
+                            <a href="#">男士上装</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#">女士上装</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#">男士夏装</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#">裙子</a>&nbsp;&nbsp;&nbsp;
+                            <a href="#">七分裤</a>&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="img_details">
+                            <a href="#"><img src="images/index_cate_images/7.jpg" ></a>
+                            <a href="#"><img src="images/index_cate_images/8.webp" ></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="hidden_list_item">
+                    <div class="hidden_part">
+                       <div class="details">
+                           <a href="#">联想</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <a href="#">华硕</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <a href="#">惠普</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <a href="#">神州</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <a href="#">苹果</a>&nbsp;&nbsp;&nbsp;
+                       </div>
+                        <div class="img_details">
+                            <a href="#"><img src="images/index_cate_images/9.webp" ></a>
+                            <a href="#"><img src="images/index_cate_images/10.webp" ></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="hidden_list_item">
+                    <div class="hidden_part">
+                        <div class="details">
+                            <a href="#">智能手表</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">智能机器人</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#">智能手环</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </div>
+                        <div class="img_details">
+                            <a href="#"><img src="images/index_cate_images/11.webp" ></a>
+                            <a href="#"><img src="images/index_cate_images/12.webp" ></a>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!--banner start-->
+    <div class="banner">
+        <!--banner_main start-->
+        <div class="banner_main">
+            <!--banner_ul start-->
+            <ul class="banner_ul">
+                <li><a href="#"><img src="images/index_banner_images/1.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/2.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/3.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/4.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/5.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/6.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/7.jpg"></a></li>
+                <li><a href="#"><img src="images/index_banner_images/8.jpg"></a></li>
+            </ul>
+        </div>
+        <!--banner_ul end-->
+        <!--banner_span start-->
+        <div class="banner_span">
+            <p>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+        </div>
+        <p class="prev"></p>
+        <p class="next"></p>
+    </div>
+    <!--banner_span end-->
+    <div class="activity">
+        <div class="activeul">
+            <div class="activeul_header">
+                <div class="activep_div activep_show" id="activep_one"><p class="activep select_show">促销</p></div>
+                <div class="activep_div" id="activep_two"> <p class="activep">公告</p></div>
+                <div class="activep_div"><p class="activep activep_more"><a href="#">更多</a></p></div>
+            </div>
+            <!--设置最新活动的内容-->
+            <ul class="activeul" id="activeul_one">
+                <li class="activenbsp"></li>
+                <li class="activeli"><a href="#"class="activea">买手机送女友了</a></li>
+                <li class="activeli"><a href="#"class="activea">国际大牌厨具799减200</a></li>
+                <li class="activeli"> <a href="#"class="activea">会员充值200返100，多充多送</a></li>
+                <li class="activeli"><a href="#"class="activea">联想笔记本半价优惠，仅此一日哦！</a></li>
+                <li class="activeli"><a href="#"class="activea">积分兑换正在进行中...</a></li>
+                <li class="activeli"><a href="#"class="activea">全场商品5人以上团购1折</a></li>
+                <li class="activeli"><a href="#"class="activea">全场男装购买达1000元及以上5折起</a></li>
+                <li class="activeli"><a href="#"class="activea">美妆到新货了，美女们不要错过啊</a></li>
+                <li class="activeli"><a href="#"class="activea">水星家纺尚新低至12.9元</a></li>
+            </ul>
+            <ul class="activeul activeul2" id="activeul_two">
+                <li class="activenbsp"></li>
+                <li class="activeli"><a href="#"class="activea">美妆到新货了，美女们不要错过啊</a></li>
+                <li class="activeli"> <a href="#"class="activea">会员充值200返100，多充多送</a></li>
+                <li class="activeli"><a href="#"class="activea">买手机送女友了</a></li>
+                <li class="activeli"><a href="#"class="activea">国际大牌厨具799减200</a></li>
+                <li class="activeli"><a href="#"class="activea">联想笔记本半价优惠，仅此一日哦！</a></li>
+                <li class="activeli"><a href="#"class="activea">积分兑换正在进行中...</a></li>
+                <li class="activeli"><a href="#"class="activea">全场商品5人以上团购1折</a></li>
+                <li class="activeli"><a href="#"class="activea">全场男装购买达1000元及以上5折起</a></li>
+                <li class="activeli"><a href="#"class="activea">水星家纺尚新低至12.9元</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="content_size">
+        <div class="side-nav" id="sideNav"><!-- 这是侧边框-->
+            <div class="side_nav_filex">
+                <ul>
+                    <li class="csnli1"><a href="#achorAIC" class="csna">家电手机</a></li>
+                    <li class="csnli2"><a href="#achorCOD" class="csna">电脑数码</a></li>
+                    <li class="csnli3"><a href="#achorP3C" class="csna">3C运动</a></li>
+                    <li class="csnli4"><a href="#achorLBB" class="csna">母婴家具</a></li>
+                    <!--<li class="csnli5"><a href="#" class="csna">家居生活</a></li>
+                    <li class="csnli6"><a href="#" class="csna">手机家电</a></li>
+                    <li class="csnli7"><a href="#" class="csna">服饰鞋包</a></li>
+                    <li class="csnli8"><a href="#" class="csna">科技产品</a></li>
+                    <li class="csnli9"><a href="#" class="csna">懂你想要</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="index_content_shop" id="chnInnerWrapper">
+            <!--家电手机-->
+            <div class="need_ani" >
+                <div class="chn_inner">
+                    <div class="chn_inner_hd">
+                        <h3 class="pt_tit" >爱家电</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">冰箱</a>
+                            <a class="pt_tags_item" href="javascript:;">空调</a>
+                            <a class="pt_tags_item" href="javascript:;">洗衣机</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper">
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chn_inner">
+                    <div class="chn_inner_hd">
+                        <h3 class="pt_tit">搞机派</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">金属机身</a>
+                            <a class="pt_tags_item" href="javascript:;">快速充电</a>
+                            <a class="pt_tags_item" href="javascript:;">拍照神器</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper" >
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--电脑数码-->
+            <div class="need_ani" >
+                <div class="chn_inner chn_c1">
+                    <div class="chn_inner_hd">
+                        <h3 class="pt_tit">电脑数码</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">冰箱</a>
+                            <a class="pt_tags_item" href="javascript:;">空调</a>
+                            <a class="pt_tags_item" href="javascript:;">洗衣机</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper">
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chn_inner chn_c2">
+                    <div class="chn_inner_hd">
+                        <h3 class="pt_tit">电脑数码</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">冰箱</a>
+                            <a class="pt_tags_item" href="javascript:;">空调</a>
+                            <a class="pt_tags_item" href="javascript:;">洗衣机</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper" >
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--3c运动-->
+            <div class="need_ani" >
+                <div class="chn_inner chn_c1">
+                    <div class="chn_inner_hd">
+                        <h3 class="pt_tit">玩3C</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">冰箱</a>
+                            <a class="pt_tags_item" href="javascript:;">空调</a>
+                            <a class="pt_tags_item" href="javascript:;">洗衣机</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper">
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chn_inner chn_c2">
+                    <div class="chn_inner_hd ">
+                        <h3 class="pt_tit">爱运动</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">冰箱</a>
+                            <a class="pt_tags_item" href="javascript:;">空调</a>
+                            <a class="pt_tags_item" href="javascript:;">洗衣机</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper" >
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--母婴爱家-->
+            <div class="need_ani" >
+                <div class="chn_inner chn_c1">
+                    <div class="chn_inner_hd ">
+                        <h3 class="pt_tit">爱宝宝</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">洗护喂养</a>
+                            <a class="pt_tags_item" href="javascript:;">寝居服饰</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper">
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chn_inner chn_c2">
+                    <div class="chn_inner_hd ">
+                        <h3 class="pt_tit">爱家</h3>
+                        <div class="pt_tags">
+                            <a class="pt_tags_item" href="javascript:;">沙发</a>
+                            <a class="pt_tags_item" href="javascript:;">茶具</a>
+                            <a class="pt_tags_item" href="javascript:;">花洒</a>
+                        </div>
+                    </div>
+                    <div class="chn_inner_wrapper" >
+                        <ul class="chn_inner_list">
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chn_inner_item">
+                                <a href="#" target="_blank" class="chn_item_lk">
+                                    <img src="./images/goodsinfo/writer.webp" alt="">
+                                    <div class="more_info">
+                                        <p class="more_info_name">【Free超市】统一 水趣多 乳酸菌发酵 风味饮料</p>
+                                        <p class="more_info_price">
+                                            <i>￥</i>
+                                            <span class="more_info_price_txt">75.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="height: 50px;clear: both"></div>
+</div>
+
+<div class="fooder">
+    <div>
+        <!--版权声明-->
+        <span class="statement">Copyright © 2017 FreeMall All Rights Reserved</span>
+    </div>
+</div>
+</body>
+</html>

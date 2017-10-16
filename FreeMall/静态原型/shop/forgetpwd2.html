@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单正在处理</title>
+    <link type="text/css" href="../css/base.css" rel="stylesheet">
+    <link type="text/css" href="../css/forgetpwd.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.1.js"></script>
+</head>
+<body>
+<div class="header"></div>
+<input type="hidden" value="0" id="iscompletepassword">
+<div class="find_wrap">
+    <div class="find_step">
+        <ul class="clearfix">
+            <!--完成给li加done,当前状态加cur -->
+            <li class="done">
+                <em></em>
+                <p>填写用户名</p>
+                <i></i>
+            </li>
+            <li class="cur">
+                <em>2</em>
+                <p>验证身份</p>
+                <i></i>
+            </li>
+            <li>
+                <em>3</em>
+                <p>设置新密码</p>
+                <i></i>
+            </li>
+            <li>
+                <em>4</em>
+                <p>完成</p>
+            </li>
+        </ul>
+    </div>
+    <div class="find_detail">
+        <div class="y_regist_form">
+            <ul class="clearfix">
+                <!--判断正确给li加class  “ipt_right”,错误给li加class  “ipt_wrong” -->
+                <li class="">
+                    <span class="y_same_input_info">验证码已发送至你邮箱：15700763932@163.com</span>
+                    <div class="y_same_item">
+                        <input class="ysame_input" type="text" value="" id="login_account">
+                        <span class="y_same_label" style="left: -62px;">验证码</span>
+                    </div>
+                    <!--提示信息begin -->
+                    <i class="item_icon_sure"></i>
+                    <div class="y_regist_tips y_regist_tips_black" style="margin-top: 60px;top: 6px;display: none">
+                        <div class="y_regtip_rel">
+                            <i></i>
+                            <div class="y_tips_words" >请输入验证码</div>
+                        </div>
+                    </div>
+                    <!--提示信息end -->
+                </li>
+
+                <li>
+                    <a href="https://passport.yhd.com/passport/find_pwd_input.do#" class="y_agreement_btn" id="confirmUser">下一步</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="fooder"></div>
+<script>
+    /*入口函数*/
+    $(function () {
+        //输入款获取光标
+        $(".ysame_input").on("focus", function () {
+            $(".y_tips_words").html("请输入验证码");
+            $(".y_regist_tips_black").show();
+        }) ;
+        $(".ysame_input").on("focusout", function () {
+            if($(this).val().trim()==""){
+                $(".y_tips_words").html("验证码不能为空");
+            }else{
+                $(".y_regist_tips_black").hide();
+            }
+        });
+        if($(".y_same_label_state").html()=="error"){
+            $(".y_same_span_errorInfo").show();
+        }
+        $("#confirmUser").on("click", function () {
+            if($(".ysame_input").val().trim()==""){
+                return false;
+            }else{
+                return true;
+            }
+        });
+
+    });
+
+</script>
+</body>
+</html>

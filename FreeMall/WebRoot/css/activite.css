@@ -1,0 +1,118 @@
+
+.activitycenter{
+    /* background-color: #3cdfff; */
+}
+
+/*活动头部*/
+.activite_header{
+    width: 100%;
+    height: 577px;
+
+}
+/*活动头部图片*/
+.activite_header img{
+    width: 100%;
+    height: 577px;
+}
+/*活动推荐父容器*/
+.activite_recommend_main{
+    width: 100%;
+    /* height: 991px; */
+    margin: 20px auto;
+
+}
+
+/*活动推荐子容器*/
+.activite_recommend_product{
+    width: 1020px;
+    height: 991px;
+    margin: 0 auto;
+    background-color: #fe5804;
+
+}
+/*活动推荐标题*/
+.activite_recommend_title{
+    width: 1020px;
+    height: 175px;
+    background-color: #ec67e4;
+    margin: 10px 0px;
+    background: url("../images/activite/10.jpg") ;
+}
+/*活动推荐商品详情*/
+.activite_recommend_details{
+    width: 1020px;
+    height: 393px;
+    margin: 10px 0px;
+    background-color: #dedede;
+}
+/*活动推荐标题斜线*/
+.activite_recommend_title_wire{
+    color: white;
+    float: left;
+    margin: 75px 20px;
+}
+/*活动推荐标题方块*/
+.activite_recommend_title_blank{
+    width: 40px;
+    height: 10px;
+    background-color: #ff3c3c;
+    float: left;
+    margin: 80px 10px;
+}
+/*活动推荐标题容器*/
+.activite_recommend_title_name_main{
+    float: left;
+    margin: 50px 20px;
+}
+/*活动推荐中文名*/
+.activite_recommend_title_f_name{
+    color: white;
+    font-size: 20px;
+}
+/*活动推荐品类英文*/
+.activite_recommend_title_name{
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 40px;
+}
+/*活动推荐品类一*/
+.activite_recommend_title_img1{
+    width: 255px;
+    height: 393px;
+    float: left;
+
+}
+.activite_recommend_title_img1 img{
+    width: 255px;
+    height: 393px;
+}
+/*活动推荐品类二*/
+.activite_recommend_title_img2{
+    width: 255px;
+    height: 393px;
+    float: left;
+}
+.activite_recommend_title_img2 img{
+    width: 255px;
+    height: 393px;
+}
+/*活动推荐品类三*/
+.activite_recommend_title_img3{
+    width: 255px;
+    height: 393px;
+    float: left;
+}
+.activite_recommend_title_img3 img{
+    width: 255px;
+    height: 393px;
+}
+/*活动推荐品类四*/
+.activite_recommend_title_img4{
+    width: 255px;
+    height: 393px;
+    float: right;
+}
+.activite_recommend_title_img4 img{
+    width: 255px;
+    height: 393px;
+}

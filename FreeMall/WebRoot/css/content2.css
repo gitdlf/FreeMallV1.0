@@ -1,0 +1,365 @@
+/*
+登录页面样式
+
+*/
+
+.login_content{
+    width: 930px;
+    height: 335px;
+    /*border: 1px solid #1adc21;*/
+    position: relative;
+    margin: 70px auto 70px;
+    text-align: center;
+}
+
+.login_image{
+    width: 510px;
+    height: 335px;
+    padding-top: 10px;
+    float: left;
+}
+
+.login_info{
+    display: inline-block;
+    width: 350px;
+    height: 335px;
+    /*border: 1px solid red;*/
+}
+
+.login_info .clearfix{
+    width: 350px;
+    height: 30px;
+    position: relative;
+    /*border: 1px solid #0028ff;*/
+}
+
+.login_info .clearfix span{
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.login_info .clearfix a{
+    color: #06c;
+    float: right;
+    line-height: 30px;
+    font-size: 7px;
+    font-weight: 400;
+}
+.login_info .clearfix a:hover{
+    color: #fd781e;
+}
+.login_info .form_item_wrap{
+    z-index: 101;
+    width: 350px;
+    height: 300px;
+    /*border: 1px solid #AAA;*/
+}
+
+
+.login_info .form_item_wrap .form_item{
+    width: 312px;
+    height: 24px;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    background: #FFF;
+    border: 1px solid #dedede;
+}
+
+.login_info .form_item_wrap .error_info{
+    width: 312px;
+    height: 24px;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    background: #FFF;
+    font-size: 12px;
+    color: #ff334b;
+
+}
+
+
+.login_info .form_item_wrap .form_item .ipt{
+    width: 230px;
+    height: 24px;
+    padding-left: 3px;
+    border: 0 none;
+    line-height: 24px;
+    vertical-align: middle;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    outline: none;
+}
+
+.login_info .form_item_wrap .show{
+    border: 1px solid #a8a8a8;
+}
+
+.login_info .form_item_wrap label{
+    display: inline-block;
+    width: 42px;
+    vertical-align: middle;
+    color: #666;
+}
+.login_info .form_item_wrap .form_item .user_ico{
+    background: url("../images/login/login_new.png") no-repeat -50px 4px;
+}
+
+.login_info .form_item_wrap .form_item .pwd_ico{
+    background: url("../images/login/login_new.png") no-repeat -150px 4px;
+}
+
+.login_info .form_item_wrap .auto_login{
+    float: left;
+    color: #999;
+}
+
+.login_info .form_item_wrap span{
+    line-height: 30px;
+    font-size: 7px;
+    font-weight: 400;
+    margin-left: 15px;
+    float: left;
+}
+.login_info .form_item_wrap .auto_login a{
+    margin-right: 15px;
+    float: right;
+    color: #999;
+}
+
+.login_btn{
+    width: 350px;
+    height: 52px;
+    border: 0 none;
+    border-radius: 3px;
+    background: #ff3c3c;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #ff7373;
+    font-family: "Microsoft YaHei";
+    line-height: 52px;
+}
+
+
+
+
+/*
+
+注册页面样式
+
+*/
+
+
+
+
+.register_content{
+    width: 1200px;
+    /*height: 500px;*/
+    margin: 0 auto 50px;
+    position: relative;
+}
+
+.register_content .icon1{
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    z-index: 120;
+    width: 1200px;
+    height: 500px;
+    margin-left: -600px;
+    background: url("../images/register/icon1.png") no-repeat;
+    opacity: .2;
+    filter: alpha(opacity=20);
+}
+
+
+.register_content .icon{
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    z-index: 120;
+    width: 1200px;
+    height: 500px;
+    margin-left: -600px;
+    opacity: .2;
+    filter: alpha(opacity=20);
+}
+
+.register_content .icon1{
+    background: url("../images/register/icon1.png") no-repeat;
+}
+.register_content .icon2{
+    background: url("../images/register/icon2.png") no-repeat;
+}
+.register_content .icon3{
+    background: url("../images/register/icon3.png") no-repeat;
+}
+.register_content .icon4{
+    background: url("../images/register/icon4.png") no-repeat;
+}
+.register_content .icon5{
+    background: url("../images/register/icon5.png") no-repeat;
+}
+
+.register_content .register_til{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 50px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.register_content .r_form_item_wrap{
+    width: 330px;
+    /*height: 400px;*/
+    margin: 20px auto;
+    position: relative;
+    z-index: 140;
+}
+
+.register_content .r_form_item_wrap .r_form_item{
+    position: relative;
+    z-index: 2;
+    width: 328px;
+    height: 50px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.register_content .r_form_item_wrap .r_form_item .y_ipt{
+    position: relative;
+    width: 288px;
+    height: 20px;
+    margin-top: 15px;
+    padding: 0 20px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.register_content .r_form_item_wrap .r_form_item .y_same_label{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    display: inline-block;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    color: #666;
+}
+.register_content .r_form_item_wrap .r_form_item .y_tip_balck .y_tip_rel{
+    background: #e3e3e3;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+    position: absolute;
+    left: 348px;
+    top: -5px;
+    color: #6b6b6b;
+    display: none;
+}
+.register_content .r_form_item_wrap .r_form_item .y_tip_balck  .y_tips_words{
+    max-width: 160px;
+    line-height: 20px;
+    color: #666;
+}
+
+.register_content .r_form_item_wrap .r_form_item .y_tip_balck .y_tip_right{
+    display: none;
+    position: absolute;
+    left: 348px;
+    top: 14px;
+    width: 23px;
+    height: 23px;
+    background: url("../images/register/regist_new.png") no-repeat -50px 0;
+}
+
+.register_content .r_form_item_wrap .r_form_item .y_tip_balck .y_tip_wrong{
+    background: #fdf3d6;
+    padding: 10px;
+    font-size: 12px;
+    width: 150px;
+    position: absolute;
+    left: 348px;
+    top: -5px;
+    color: #6b6b6b;
+    display: none;
+}
+.register_content .r_form_item_wrap .show{
+    border: 1px solid #5d5d5d;
+}
+
+.register_content .r_form_item_wrap .y_agreement_word{
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    color: #666;
+    text-indent: 1em;
+    text-align: center;
+}
+.register_content .r_form_item_wrap .y_agreement_word a{
+    color: #0066cb;
+}
+
+.register_content .r_form_item_wrap .y_agreement_btn{
+    display: block;
+    width: 330px;
+    height: 52px;
+    margin-top: 6px;
+    background-color: #ff3c3c;
+    font-size: 16px;
+    line-height: 52px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+}
+.register_content .r_form_item_wrap  .y_clearfix{
+    width: 350px;
+    height: 30px;
+    position: relative;
+    /*border: 1px solid #0028ff;*/
+}
+.register_content .r_form_item_wrap  .y_clearfix .error_info{
+    width: 312px;
+    height: 24px;
+    margin-bottom: 25px;
+    padding: 14px 18px;
+    /*background: #FFF;*/
+    font-size: 12px;
+    color: #ff334b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

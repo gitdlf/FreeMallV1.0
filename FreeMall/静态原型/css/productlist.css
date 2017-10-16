@@ -1,0 +1,421 @@
+.productlist_content{
+    width:1000px;
+    /*待删除*/
+    /*height: 700px;*/
+    margin: 5px auto 30px;
+    /*border: 1px solid red;*/
+}
+
+.productlist_content .plist{
+    font-size: 12px;
+    font-family: "Helvetica Neue", tahoma, Arial, Verdana, "Microsoft YaHei", "Hiragino Sans GB", 宋体;
+
+}
+
+.productlist_content .plist .mod_search_select{
+    height: 40px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    font-family: "Microsoft Yahei";
+    margin-bottom: 10px;
+}
+
+.productlist_content .plist .mod_search_select .sort_b{
+    position: relative;
+    z-index: 24;
+    float: left;
+    /*宽度与背景色带删除*/
+    /*width: 247px;*/
+    /*height: 41px;*/
+    /*background-color: red;*/
+}
+
+.productlist_content .plist .mod_search_select .sort_b a{
+    position: relative;
+    height: 41px;
+    line-height: 41px;
+    border-right: 1px solid #e1e1e1;
+    /*border-left: 1px solid #e1e1e1;*/
+    margin-right: -4px;
+    padding: 0 7px 0 7px;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    color: #a3a3a3;
+
+}
+
+.productlist_content .plist .mod_search_select .sort_b a:hover{
+    color: red;
+}
+
+.productlist_content .plist .mod_search_select .sort_b .show{
+    color: #fff;
+    background-color: #F27E56;
+    margin-top: -1px;
+    line-height: 41px;
+}
+
+.productlist_content .plist .mod_search_select .sort_b .show:hover{
+    color: white;
+}
+
+.productlist_content .plist .mod_search_select .sort_b a.zh{
+    padding: 0 12px;
+}
+
+.productlist_content .plist .mod_search_select .sort_b.iconSearch{
+    display: inline-block;
+    width: 12px;
+    font-size: 10px;
+    -webkit-transform: scale(0.8);
+    vertical-align: middle;
+    color: #ccc;
+}
+
+
+.productlist_content .plist .mod_search_select .between{
+    width: 99px;
+    height: 21px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    border-right: 1px solid #e1e1e1;
+    z-index: 23;
+    float: left;
+    margin-left: 4px;
+    /*background-color: red;*/
+}
+
+.productlist_content .plist .mod_search_select .between .boxTop{
+    position: relative;
+    z-index: 25;
+}
+
+.productlist_content .plist .mod_search_select .between .boxTop input{
+    display: inline-block;
+    width: 35px;
+    height: 9px;
+    padding: 4px 2px;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    outline: none;
+    font: 12px Helvetica Neue,tahoma,Arial,Verdana,"Microsoft YaHei","Hiragino Sans GB","\5b8b\4f53";
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+.productlist_content .plist .mod_search_select .between .boxTop .ip1{
+    border-color: rgb(204, 204, 204);
+    margin-right:1px;
+}
+
+.productlist_content .plist .mod_search_select .between .boxTop .ip2{
+
+    border-color: rgb(204, 204, 204);
+    margin-right:1px;
+}
+
+.productlist_content .plist .mod_search_select .between .boxCon{
+    top: -1px;
+    width: 200px;
+    padding-top: 40px;
+    position: absolute;
+    left: -1px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    display: none;
+}
+.productlist_content .plist .mod_search_select .between .boxCon li{
+    list-style: none;
+}
+.productlist_content .plist .mod_search_select .between .boxCon .first{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 0;
+    border: none 0;
+    width: 75px;
+    overflow: hidden;
+    padding-bottom: 6px;
+    padding-left: 0;
+    display: list-item;
+}
+.productlist_content .plist .mod_search_select .between .boxCon .first a{
+    float: left;
+    width: 35px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.productlist_content .plist .mod_search_select .between .boxCon .first .btn1{
+    color: #999;
+}
+
+.productlist_content .plist .mod_search_select .between .boxCon .first .btn2{
+    margin-left: 5px;
+    color: #fff;
+    background-color: #ff8860;
+    border-radius: 2px;
+}
+
+
+.productlist_content .plist  .mod_product_list{
+    position: relative;
+    padding-top: 20px;
+    font: 12px Helvetica Neue,tahoma,Arial,Verdana,"Microsoft YaHei","Hiragino Sans GB","\5b8b\4f53";
+    color: #333;
+}
+
+.productlist_content .plist  .mod_product_list .list_width{
+    margin-left: -12px;
+    width: 1216px;
+    position: relative;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro{
+    height: 364px;
+    margin: 0 0 42px 20px;
+    background-color: white;
+    width: 230px;
+    position: relative;
+    float: left;
+    border: 2px solid white;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro:hover{
+    border: 2px solid #c2c2c2;
+    background-color: rgba(241,241,241,0.1);
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox{
+    position: relative;
+    z-index: 3;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .proImg{
+    overflow: visible;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .proImg .img{
+    display: block;
+    background: url("../images/goodsinfo/loading.gif") no-repeat center;
+}
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .proImg .img img{
+    display: block;
+    border:0 none;
+    vertical-align: top;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox  .proPrice{
+    padding: 0 5px;
+    margin-bottom: 5px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox  .proPrice .num{
+    height: 18px;
+    line-height: 18px;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    color: #e60012;
+    font-weight: bold;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox  .proPrice .num b{
+    font-size: 14px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox  .proName{
+    padding: 0 5px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox  .proName a{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox  .proName a:hover{
+    color: #e60012;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act{
+    padding: 5px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num{
+    float: left;
+    margin-right: 8px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num input{
+    float: left;
+    width: 30px;
+    height: 28px;
+    border: 0;
+    color: #555;
+    line-height: 28px;
+    text-align: center;
+    background-position: -46px -29px;
+    border:1px solid #cccccc;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num span{
+    float: left;
+    margin-left: 2px;
+    width: 16px;
+    height: 28px;
+}
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .sd{
+    display: block;
+    width: 16px;
+    height: 14px;
+    overflow: hidden;
+    line-height: 14px;
+    text-indent: -99em;
+    cursor: pointer;
+    text-decoration: none;
+    background: url("../images/goodsinfo/searchSprite_png24.png") 0 0 no-repeat;
+    color: #333333;
+}
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .add{
+    background-position: -63px 0;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .dis_decrease{
+    background-position: -63px -14px;
+    margin-top: 3px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .shopping_actfl{
+    height: 28px;
+    overflow: hidden;
+    float: left;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .shopping_actfl .pro_buy_btn{
+    width: 90px;
+    height: 26px;
+    color: #fff;
+    line-height: 28px;
+    background-color: #ff5c4d;
+    border: 1px solid #ff4141;
+    float: left;
+    display: inline;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/*销量*/
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .storeTotel{
+    padding: 0 5px;
+    display: block;
+    clear: both;
+    margin-top: 30px;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .storeTotel span{
+    color: red;
+}
+
+/*分页样式*/
+.productlist_content .plist .mod_turn_page{
+    position: relative;
+    clear: both;
+}
+
+.productlist_content .plist .mod_turn_page .turn_page{
+    float: right;
+    line-height: 14px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.productlist_content .plist .mod_turn_page .turn_page a{
+    float: left;
+    width: 34px;
+    height: 16px;
+    overflow: hidden;
+    margin-left: 5px;
+    padding: 9px 0;
+    border: 1px solid #d2d2d2;
+    background: #fafafa;
+    color: #999;
+    font-size: 16px;
+    font-family: Arial;
+    text-align: center;
+    text-decoration: none;
+}
+
+.productlist_content .plist .mod_turn_page .turn_page a:hover{
+    border: 1px solid #F2855F;
+    background: #ff8c64;
+    color: #fff;
+}
+
+.productlist_content .plist .mod_turn_page .turn_page .show{
+    border: 1px solid #F2855F;
+    background: #ff8c64;
+    color: #fff;
+}
+
+/*上一页*/
+.productlist_content .plist .mod_turn_page .turn_page .page_prev{
+    width: 82px;
+}
+
+
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .shopping_actfl .pro_buy_btn_label{
+    display: inline-block;
+    margin-left: 3px;
+    color: red;
+}
+
+.productlist_content .plist  .mod_product_list .list_width .mod_search_pro .itemBox .item_act .shopping_num .shopping_actfl  .pro_buy_btn_max_error{
+    display: inline-block;
+    margin-left: 3px;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
